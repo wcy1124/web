@@ -73,8 +73,7 @@ window.addEventListener('mousemove', (event) => {
         const docHeight = document.documentElement.scrollHeight - window.innerHeight;
         const newScrollY = scrollPercentage * docHeight;
         window.scrollTo({
-            top: newScrollY,
-            behavior: 'smooth'
+            top: newScrollY
         });
     }
 });
