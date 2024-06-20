@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
         });
     });
+});
 
+document.addEventListener('DOMContentLoaded', (event) => {
     const animationElement = document.querySelector('.opening-animation');
 
     animationElement.addEventListener('animationend', () => {
