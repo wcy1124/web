@@ -218,9 +218,28 @@ a{
         font-size: 20px;
         color: #ffffff;
     }
-    .slogan{
-        color: rgba(75, 128, 203, 0.6);
+    .slogan {
         font-size: 12px;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        color: rgba(75, 128, 203, 0.6);
+    }
+    .slogan::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        width: 0;
+        background-image: linear-gradient(45deg, #ffffff, #0c1e4b);
+        background-clip: text;
+        transition: width 2.5s ease-in-out;
+    }
+    .slogan:hover::before {
+        width: 100%;
+        background-image: linear-gradient(45deg, #ffffff, #0c1e4b);
+        background-clip: text;
     }
     .tool{
         display: flex;
@@ -709,9 +728,28 @@ a{
         font-size: 12px;
         color: #ffffff;
     }
-    .slogan{
-        color: rgba(75, 128, 203, 0.6);
+    .slogan {
         font-size: 10px;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        color: rgba(75, 128, 203, 0.6);
+    }
+    .slogan::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        width: 0;
+        background-image: linear-gradient(45deg, #ffffff, #0c1e4b);
+        background-clip: text;
+        transition: width 2.5s ease-in-out;
+    }
+    .slogan:hover::before {
+        width: 100%;
+        background-image: linear-gradient(45deg, #ffffff, #0c1e4b);
+        background-clip: text;
     }
     .tool{
         display: flex;
